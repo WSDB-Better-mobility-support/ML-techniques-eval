@@ -25,16 +25,16 @@ alngSum=sum(alng)
 figure('Position',[440 378 560 620/3]);
 bar([slSum slngSum ; rlSum rlngSum; 0 alngSum ; 0 11 ] );
 ylabel('Joule');
-labels = {'SQ','RQ' , 'AQ' , 'OQ'};
+labels = {'SL','ML' , 'PML' , 'OPML'};
 set(gca , 'xticklabel' , labels);
 set(gca , 'fontsize' , 16);
 set(gca , 'xLim', [0.5 4.5])
 
 
 figure('Position',[440 378 560 620/3]);
-bar([length(sl) length(rl)  ] );
+bar([length(sl) length(rl) length(alng) 1  ] );
 ylabel('Number of queries');
-labels = {'SL','RL'};
+labels = {'SL','ML' , 'PML' , 'OPML'};
 set(gca , 'xticklabel' , labels);
 set(gca , 'fontsize' , 16);
-set(gca , 'xLim', [0.5 2.5])
+set(gca , 'xLim', [0.5 4.5])
