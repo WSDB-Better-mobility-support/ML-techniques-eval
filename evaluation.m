@@ -28,7 +28,7 @@ bar([slSum slngSum ; rlSum rlngSum; 0 alngSum ; 0 11 ] );
 ylabel('Joule');
 labels = {'SL','ODML' , 'AML' , 'OML'};
 set(gca , 'xticklabel' , labels);
-set(gca , 'fontsize' , 16);
+set(gca , 'fontsize' , 20);
 set(gca , 'xLim', [0.5 4.5])
 
 figure('Position',[440 378 560 620/3]);
@@ -36,7 +36,7 @@ bar([length(sl) length(rl) length(alng) 1  ] );
 ylabel('Number of queries');
 labels = {'SL','ODML' , 'AML' , 'OML'};
 set(gca , 'xticklabel' , labels);
-set(gca , 'fontsize' , 16);
+set(gca , 'fontsize' , 20);
 set(gca , 'xLim', [0.5 4.5])
 %%
 % statistics 
